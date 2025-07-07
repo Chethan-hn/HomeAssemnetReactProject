@@ -1,0 +1,81 @@
+import {
+    Dimensions,
+    StyleSheet,
+} from 'react-native';
+export const CartScreenStyles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#f9f9f9',
+        padding: 16,
+    },
+    title: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginBottom: 16,
+        color: '#333',
+        textAlign: 'center',
+    },
+    card: {
+        backgroundColor: '#fff',
+        borderRadius: 12,
+        padding: 16,
+        marginBottom: 12,
+        borderWidth: 1,
+        borderColor: '#ccc',
+        shadowColor: '#000',
+        shadowOpacity: 0.1,
+        shadowOffset: { width: 0, height: 1 },
+        shadowRadius: 4,
+        elevation: 2,
+    },
+    row: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginBottom: 4,
+    },
+    itemTitle: {
+        fontSize: 18,
+        fontWeight: '600',
+        color: '#333',
+    },
+    price: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        color: '#333',
+    },
+    details: {
+        color: '#666',
+        fontSize: 14,
+        marginTop: 4,
+    },
+    totalContainer: {
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        backgroundColor: '#fbcd15',
+        paddingVertical: 16,
+        paddingHorizontal: 20,
+        borderTopLeftRadius: 20,
+        borderTopRightRadius: 20,
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+    totalText: {
+        fontSize: 18,
+        fontWeight: '600',
+        color: '#333',
+    },
+    totalAmount: {
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: '#000',
+    },
+    empty: {
+        textAlign: 'center',
+        color: '#888',
+        fontSize: 16,
+        marginTop: 60,
+    },
+});
