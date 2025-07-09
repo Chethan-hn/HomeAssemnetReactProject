@@ -5,7 +5,6 @@ import {
     FlatList,
     Image,
     TouchableOpacity,
-    StyleSheet,
     Animated,
     Easing
 } from 'react-native';
@@ -97,7 +96,7 @@ const CatalogScreen = ({ navigation }: any) => {
             {loading && <Text style={CatalogScreenStyles.emptyText}>Loading catalog...</Text>}
 
             {!loading && error && (
-                <Text style={CatalogScreenStyles.emptyText}>Failed to load catalog. Check your connection.</Text>
+                <Text style={CatalogScreenStyles.emptyText}>Failed to load catalog</Text>
             )}
 
             {!loading && !error && products.length > 0 && (
@@ -110,10 +109,10 @@ const CatalogScreen = ({ navigation }: any) => {
             )}
             <View style={CatalogScreenStyles.footer}>
                 <TouchableOpacity style={CatalogScreenStyles.footerButton} onPress={() => navigation.navigate('Cart', { cartItems })}>
-                    <Text style={CatalogScreenStyles.footerText}>🛒 Cart ({cartItems.reduce((a, b) => a + b.quantity, 0)})</Text>
+                    <Text style={CatalogScreenStyles.footerText}>Cart ({cartItems.reduce((a, b) => a + b.quantity, 0)})</Text>
                 </TouchableOpacity>
                 <TouchableOpacity style={[CatalogScreenStyles.footerButton, { backgroundColor: '#4B9EFF' }]} onPress={() => navigation.navigate('Chat')}>
-                    <Text style={CatalogScreenStyles.footerText}>💬 Chat</Text>
+                    <Text style={CatalogScreenStyles.footerText}>Chat</Text>
                 </TouchableOpacity>
             </View>
         </View>
@@ -122,9 +121,4 @@ const CatalogScreen = ({ navigation }: any) => {
 };
 
 export default CatalogScreen;
-
-
-const styles = StyleSheet.create({
-
-});
 
