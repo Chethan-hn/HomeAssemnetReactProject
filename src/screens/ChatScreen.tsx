@@ -157,7 +157,7 @@ const ChatScreen = () => {
                     <Text style={ChatScreenStyles.imageText}>📎</Text>
                 </TouchableOpacity>
                 <TextInput
-                    placeholder="Type your issue...."
+                    placeholder="Type your issue....."
                     value={msg}
                     onChangeText={setMsg}
                     style={ChatScreenStyles.input}
