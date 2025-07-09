@@ -35,6 +35,12 @@ Let’s get everything running in a few minutes:
 
 ---
 
+### run using the command 
+npx react-native run-android
+
+
+
+
 ### 🚀 Getting Started
 
 1. **Clone this repository**
